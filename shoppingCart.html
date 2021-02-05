@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/shopsystem.css" />
+
+		<title>串精選 CHUAN SHOP</title>
+	</head>
+</html>
+<body>
+	<div id="header">
+		<div id="phone_btnbox">
+			<div id="line1"></div>
+			<div id="line2"></div>
+			<div id="line3"></div>
+		</div>
+		<div id="logo_container">
+			<a href="ChuanShop.html"><img id="logo" src="images/chuanShopLOGO.svg"/></a>			
+		</div>
+		
+		<nav>
+			<ul>
+				<li class="navbar_btn exit_btn"><a href="ChuanShop.html" title="首頁">首頁</a></li>
+				<li class="navbar_btn exit_btn"><a href="series-ttfun.html" title="">系列1</a></li>
+				<li class="navbar_btn" id="travelfound_btn"><a href="series2.html" title="">系列2</a></li>
+				<li class="navbar_btn" id="packge_travel_btn"><a href="series3.html" title="">系列3</a></li>
+				<li class="navbar_btn exit_btn"><a href="series4.html" title="">系列4</a></li>
+				<li class="navbar_btn" id="nav_aboutus_btn"><a href=service title="串客服">串客服</a></li>
+        <li class="navbar_btn" id="moreinfo_btn"><a href="QA.html" title="Q&A">Q&A</a></li>
+				<li class="navbar_btn" id="dream_media_btn"><a href="index.html" title="串媒體" target="_blank">串媒體</a></li>
+			</ul>
+			<div id="shop_btn">
+					<a href="login.html" title="會員中心"><img src="images/iconfinder-identity.svg" alt="" class="shop_btn_logo" id="identity"></a>
+					<a href="shoppingCart.html" title="購物車"><img src="images/iconfinder-shopping-cart.svg" alt="" class="shop_btn_logo" id="shoppingcart"></a>
+					<form id="search_btn_box">
+						<input id="search_commodity" type="text" name="search_commodity" placeholder="搜尋商品"/>
+						<button id="search_btn"><img src="images/iconfinder-search.svg" title="搜尋" alt="" class="shop_btn_logo" id="search"></button>
+					</form>
+				</div>
+		</nav>
+	</div>
+	<main>
+    <div id="shopping_cart_container">
+      <div id="surf_track"><a href="ChuanShop.html">首頁</a>><p>購物車</p></div>
+      <div id="shopping_cart">
+        <h1 id="shopping_cart_title">購物車</h1>
+        <div id="my_shopping_cart">
+          <input type="checkbox" name="select_all" id="select_all_shopping" name="select_all_shopping"><label for="select_all_shopping"><span></span>選擇全部</label>
+          <div id="shopping_cart_list_container">
+
+            <div class="shopping_cart_list series1_cart">
+              <div class="series_title">
+                <input type="checkbox" name="serise_select[]" id="serise1_select"><label for="serise1_select"><span></span>系列1</label><div class="delete_series delete"><div class="cross_line1"></div><div class="cross_line2"></div></div>
+              </div>
+              <ul>
+                <li class="cart_commodity">
+                  <div class="cart_image"><img src="https://picsum.photos/id/55/300/300"/></div>
+                <div class="cart_text">
+                  <h3>名稱名稱名稱名稱</h3>
+                  <select name="quantity" class="cart_commodity_quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                  <h3 class="cart_price">NT$0000</h3>
+                </div>
+                  <div class="delete_commodity delete"><div class="cross_line1"></div><div class="cross_line2"></div></div>
+                </li>
+                <li class="cart_commodity">
+                  <div class="cart_image"><img src="https://picsum.photos/id/55/300/300"/></div>
+                <div class="cart_text">
+                  <h3>名稱名稱名稱名稱2</h3>
+                  <select name="quantity" class="cart_commodity_quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                  <h3 class="cart_price">NT$0000</h3>
+                </div>
+                  <div class="delete_commodity delete"><div class="cross_line1"></div><div class="cross_line2"></div></div>
+                </li>
+                <li class="cart_commodity">
+                  <div class="cart_image"><img src="https://picsum.photos/id/55/300/300"/></div>
+                <div class="cart_text">
+                  <h3>名稱名稱名稱名稱2</h3>
+                  <select name="quantity" class="cart_commodity_quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                  <h3 class="cart_price">NT$0000</h3>
+                </div>
+                  <div class="delete_commodity delete"><div class="cross_line1"></div><div class="cross_line2"></div></div>
+                </li>
+              </ul>
+            </div>
+            <div class="shopping_cart_list series2_cart">
+              <div class="series_title">
+                <input type="checkbox" name="serise_select[]" id="serise2_select"><label for="serise2_select"><span></span>系列2</label></sp><div class="delete_series delete"><div class="cross_line1"></div><div class="cross_line2"></div></div>
+              </div>
+              <ul>
+                <li class="cart_commodity">
+                  <div class="cart_image"><img src="https://picsum.photos/id/85/300/300"/></div>
+                <div class="cart_text">
+                  <h3>名稱名稱名稱名稱</h3>
+                  <select name="quantity" class="cart_commodity_quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                  <h3 class="cart_price">NT$0000</h3>
+                </div>
+                  <div class="delete_commodity delete"><div class="cross_line1"></div><div class="cross_line2"></div></div>
+                </li>
+                <li class="cart_commodity">
+                  <div class="cart_image"><img src="https://picsum.photos/id/85/300/300"/></div>
+                <div class="cart_text">
+                  <h3>名稱名稱名稱名稱2</h3>
+                  <select name="quantity" class="cart_commodity_quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                  <h3 class="cart_price">NT$0000</h3>
+                </div>
+                  <div class="delete_commodity delete"><div class="cross_line1"></div><div class="cross_line2"></div></div>
+                </li>
+                </ul>
+            </div>
+            <div class="shopping_cart_list series3_cart">
+              <div class="series_title">
+                <input type="checkbox" name="serise_select[]" id="serise3_select"><label for="serise3_select"><span></span>系列3</label></sp><div class="delete_series delete"><div class="cross_line1"></div><div class="cross_line2"></div></div>
+              </div>
+              <ul>
+                <li class="cart_commodity">
+                  <div class="cart_image"><img src="https://picsum.photos/id/57/300/300"/></div>
+                <div class="cart_text">
+                  <h3>名稱名稱名稱名稱</h3>
+                  <select name="quantity" class="cart_commodity_quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                  <h3 class="cart_price">NT$0000</h3>
+                </div>
+                  <div class="delete_commodity delete"><div class="cross_line1"></div><div class="cross_line2"></div></div>
+                </li>
+              </ul>
+            </div>
+            <div class="shopping_cart_list series4_cart">
+              <div class="series_title">
+                <input type="checkbox" name="serise_select[]" id="serise4_select"><label for="serise4_select"><span></span>系列4</label></sp><div class="delete_series delete"><div class="cross_line1"></div><div class="cross_line2"></div></div>
+              </div>
+              <ul>
+                <li class="cart_commodity">
+                  <div class="cart_image"><img src="https://picsum.photos/id/56/300/300"/></div>
+                <div class="cart_text">
+                  <h3>名稱名稱名稱名稱</h3>
+                  <select name="quantity" class="cart_commodity_quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                  <h3 class="cart_price">NT$0000</h3>
+                </div>
+                  <div class="delete_commodity delete"><div class="cross_line1"></div><div class="cross_line2"></div></div>
+                
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+				<div id="price_statistics">
+          <div id="commodity_calculated">
+            <h2>商品總計:</h2>
+            <p id="commodity_total_price">NT$0000</p>
+          </div>
+          <hr>
+          <div id="commodity_total">
+            <h2>結帳總金額:</h2>
+            <h2 id="final_price">NT$0000</h2>
+          </div>
+          <input type="button" id="buy_btn" name="buy_btn" value="結帳">
+        </div>
+      </div>
+			
+    </div>
+
+		
+		<div id="other">
+			<h2 class="news_title" id="other_title">更多資訊</h2>
+			<div class="others" id="aboutus"><a href="about.html" target="_blank"><img src="images/dreamer_logo.svg" alt=""></a></div>
+			<div class="others" id="channel"><a href="http://icht.com.tw/" target="_blank"><img src="images/channel_logo.svg" alt=""></a></div>
+			<div class="others" id="channel"><a href="http://www.oolife.com.tw/" target="_blank"><img src="images/oolife_logo.svg" alt=""></a></div>
+			<div class="others" id="channel"><a href="http://ttfun.tw/app/app" target="_blank"><img src="images/ttfun_logo.svg" alt=""></a></div>
+		</div>
+	</main>
+	<div id="footer">
+		<div id="footer_content">
+			<div id="footer_content_left">
+				<div id="logo_bottom">
+					<img id="logo_buttom_img" src="images/oomediaLOGO_bottom.svg"/>
+				</div>
+				<div id="contact_info">
+					<p>110 台北市信義區基隆路一段163號8樓之2</p>
+					<p>TEL:02-27493998 | FAX:27495587</p>
+					<p>峻盟國際整合行銷 Copyright © 2019 DREAMER Internet Corporation Limited</p>
+				</div>
+			</div>
+			<div id="footer_content_right">
+				<a href="about.html">關於我們</a>
+				<a href="Business_Negotiation.html">廣告洽談</a>
+				<a href="subject_submission.html">題材投稿</a>
+				
+			</div>
+			
+			
+		</div>
+		
+  </div>
+  <div id="gotop_btn"></div>
+	<script type="text/javascript" src="javascript/jquery-3.4.1.js"></script>
+	<script src="javascript/ChuanShop.js"></script>
+</body>
+

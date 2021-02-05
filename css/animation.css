@@ -1,0 +1,138 @@
+#main_top {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  opacity: 0;
+}
+
+.news_inner {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  opacity: 0;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.article {
+  opacity: 0;
+}
+
+.article:nth-child(odd) {
+  -webkit-transform: translate(-20px);
+          transform: translate(-20px);
+}
+
+.article:nth-child(even) {
+  -webkit-transform: translate(20px);
+          transform: translate(20px);
+}
+
+.article:nth-child(1) {
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.article:nth-child(2) {
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
+}
+
+.article:nth-child(3) {
+  -webkit-transition-delay: .9s;
+          transition-delay: .9s;
+}
+
+.article:nth-child(4) {
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
+}
+
+.article:nth-child(5) {
+  -webkit-transition-delay: 1.5s;
+          transition-delay: 1.5s;
+}
+
+.article:nth-child(6) {
+  -webkit-transition-delay: 1.8s;
+          transition-delay: 1.8s;
+}
+
+#travelfound_title {
+  opacity: 0;
+}
+
+.class_btn {
+  opacity: 0;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.active {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.active:nth-child(2) {
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.active:nth-child(3) {
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
+}
+
+.active:nth-child(4) {
+  -webkit-transition-delay: .9s;
+          transition-delay: .9s;
+}
+
+.active:nth-child(5) {
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
+}
+
+.active:nth-child(6) {
+  -webkit-transition-delay: 1.5s;
+          transition-delay: 1.5s;
+}
+
+.active:nth-child(7) {
+  -webkit-transition-delay: 1.8s;
+          transition-delay: 1.8s;
+}
+
+.about_paragraph {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.about_paragraph:nth-child(1) {
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.about_paragraph:nth-child(2) {
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
+}
+
+.about_paragraph:nth-child(3) {
+  -webkit-transition-delay: .9s;
+          transition-delay: .9s;
+}
+
+.about_paragraph:nth-child(4) {
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
+}
+
+.about_paragraph:nth-child(5) {
+  -webkit-transition-delay: 1.5s;
+          transition-delay: 1.5s;
+}
+/*# sourceMappingURL=animation.css.map */

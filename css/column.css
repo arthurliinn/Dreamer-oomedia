@@ -1,0 +1,227 @@
+#main_column {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  max-width: 1080px;
+  margin-top: 80px;
+}
+
+#column_p {
+  text-align: center;
+  color: #999999;
+  margin-top: 60px;
+  font-weight: 700;
+}
+
+#agency_title_container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+#column_agency_logo {
+  width: 20%;
+  float: left;
+  vertical-align: middle;
+}
+
+#column_agency_title {
+  float: left;
+  vertical-align: middle;
+  font-size: 45px;
+  top: 25%;
+}
+
+#main_top {
+  margin-top: 50px;
+}
+
+#column_title {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  border-left: solid 5px #75aab1;
+  font-size: 40px;
+}
+
+.column_container {
+  margin: 0 auto;
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.agency_box {
+  width: 30%;
+  height: 500px;
+  border: solid 2px #999999;
+  border-radius: 20px;
+  padding: 25px;
+  margin-left: 3%;
+  margin-top: 80px;
+}
+
+.agency_logo_container {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  border-radius: 9999px;
+  border: solid 2px #999999;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.agency_logo_container img {
+  width: 55px;
+  left: 5px;
+}
+
+.agency_name {
+  display: inline-block;
+  font-size: 25px;
+  vertical-align: middle;
+  color: #000000;
+}
+
+.agency_intro {
+  margin-top: 50px;
+  font-weight: 700;
+  color: #4D4D4D;
+  line-height: 25px;
+}
+
+#main_agency {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#column_agency_intro {
+  width: 35%;
+  margin: 0 auto;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.agency_content {
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+.agency_content img {
+  width: 45%;
+  display: inline-block;
+  float: left;
+}
+
+.content_video {
+  width: 45%;
+  display: inline-block;
+  margin-left: 10%;
+}
+
+.content_video iframe {
+  margin-left: 15%;
+}
+
+.content_video p {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#agency_contact {
+  width: 45%;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.contact_box {
+  display: inline-block;
+}
+
+.contact_box:nth-child(3) {
+  margin-left: 320px;
+}
+
+.contact_detail {
+  line-height: 30px;
+}
+
+.contact_detail i {
+  margin-right: 10px;
+  color: #FC8921;
+}
+
+@media screen and (max-width: 1024px) {
+  .content_video {
+    width: 45%;
+  }
+  .content_video iframe {
+    width: 100%;
+    margin-left: unset;
+  }
+  .content_video p {
+    width: 80%;
+  }
+  #column_agency_intro {
+    width: 70%;
+  }
+  #agency_contact {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #main_column {
+    width: 100%;
+    margin: unset;
+  }
+  .column_container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .agency_box {
+    width: 45%;
+    margin-left: 1%;
+  }
+  #agency_contact {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact_box:nth-child(3) {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .contact_box:nth-child(3) {
+    margin-left: unset;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .agency_box {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .agency_content img {
+    width: 100%;
+  }
+  .content_video {
+    width: 100%;
+    margin-left: unset;
+    margin-top: 20px;
+  }
+}
+/*# sourceMappingURL=column.css.map */

@@ -1,0 +1,414 @@
+$main_color: #75aab1;
+$main_color_hover: rgba(255, 255, 255, 0.8)
+$main_color_btn_hover: #b9b0b2;
+$main2_color: #B9B0B2;
+$color_decoration: #BC6C2C;
+$color_decoration_slider: rgba(148, 154, 137, 0.5);
+$color_text: #727171;
+$color_box_border: #9b9b9b;
+$color_line: #B9B0B2;
+
+#login_container
+  width: 100%
+#surf_track
+  margin-bottom: 50px
+  a
+    display: inline-block
+  p
+    display: inline-block
+#login_form
+  display: flex
+  justify-content: flex-start
+  height: 500px
+  margin-top: 50px
+  b
+    margin-top: 26px
+.member_input_bar
+  width: 300px
+  height: 25px
+  padding-left: 5px
+#login_form_left
+  display: flex
+  flex-direction: column
+  width: 40%
+  h1
+    padding-left: 10px
+    border-left: solid 5px $color_decoration
+    margin-bottom: 25px
+  #remember_userID
+    width: unset
+    height: unset
+    padding: unset
+#login_form_right
+  display: flex
+  flex-direction: column
+  width: 30%
+  margin-left: 50px
+  height: 425px
+  h1
+    padding-left: 10px
+    border-left: solid 5px $color_decoration
+    margin-bottom: 25px
+#login_btn_box
+  margin-top: 25px
+  width: 300px
+#login_btn
+  border: none
+  cursor: pointer
+#signup_btn
+  bottom: 0
+    
+
+.login_btn,.forget_btn
+  background-color: $color_decoration
+  color: #ffffff
+  font-size: 25px
+  padding: 3px 30px
+  border-radius: 40px
+  right: 0
+  position: absolute
+  cursor: pointer
+
+#forget_btn
+  margin-top: 20px
+#forgot_password_btn
+  margin-top: 40px
+  width: 300px
+  text-align: center
+  border-top: solid 3px $color_line
+  a
+    margin-top: 10px
+    display: inline-block
+#service, #shopping_cart ,#QA,#member_centre,#modify_information,#forget_password
+  margin-top: 25px
+  margin-bottom: 100px
+  p
+    font-weight: bold
+    display: inline-block
+#service_title,#shopping_cart_title,#QA_title,#member_centre_title,#member_centre_title,#modify_information_title,#forget_password_title
+  padding-left: 10px
+  margin-bottom: 25px
+  border-left: solid 5px $color_decoration
+
+.red_text
+  color: $color_decoration
+
+#shopping_cart_container,#QA_container,#member_centre_container,#modify_information_container
+  width: 100%
+
+#shopping_cart_list_container
+  width: 100%
+.series_title
+  border-bottom: solid 1px $color_line
+  padding: 10px
+.shopping_cart_list 
+  margin-top: 50px
+
+.delete
+  display: inline-block
+  width: 20px
+  height: 20px
+  cursor: pointer
+  &:hover 
+    .cross_line1,.cross_line2
+      border-color: black
+    
+.delete_series
+  float: right
+  margin-right: 10px
+
+.delete_commodity
+  top: 90px
+  margin-right: 20px
+.cross_line1, .cross_line2
+  border: solid 1px $color_text
+  width: 20px
+  height: .5px
+  top: 50%
+
+.cross_line1
+  transform: rotate(45deg)
+  transform-origin: 40%
+
+.cross_line2
+  transform: rotate(-45deg)
+  transform-origin: 45%
+
+.shopping_cart_list
+  border: solid 1px $color_line
+
+.cart_commodity
+  margin-top: 20px
+  list-style: none
+  display: flex
+  align-content: center
+  margin-left: 10px
+  h3
+    height: fit-content
+    line-height: 200px
+.cart_text
+  width: 55%
+  display: flex
+  justify-content: space-between
+  margin: 0 auto
+.cart_commodity_quantity
+  height: fit-content
+  top: 90px
+  width: 70px
+  height: 30px
+.cart_image
+  width: 20%
+  height: auto
+  img
+    width: 100%
+    height: auto
+.cart_price
+  font-size: 25px
+  color: $color_decoration
+
+input[type="checkbox"]
+  display: none
+
+input[type="checkbox"] + label span
+  width: 25px
+  height: 25px
+  display: inline-block
+  vertical-align: middle
+  background: url("../images/checkbox.png")
+  background-size: cover
+  cursor: pointer
+input[type="checkbox"]:checked+ label span
+  background: url("../images/checkbox-checked.png")
+  background-size: cover 
+
+
+#price_statistics
+  width: 100%
+
+#commodity_calculated
+  width: 90%
+  padding: 25px 0 
+  margin-right: auto 
+  display: flex
+  justify-content: space-between
+
+#commodity_total_price
+  font-size: 23px
+  font-weight: 700
+#commodity_total
+  width: 90%
+  padding: 25px 0 
+  margin-right: auto 
+  display: flex
+  justify-content: space-between
+#final_price
+  color: $color_decoration
+
+#buy_btn
+  color: #ffffff
+  background-color: $color_decoration
+  font-size: 30px
+  padding: 5px 40px
+  float: right
+  right: 10%
+  border-radius: 30px
+  box-shadow: none
+  cursor: pointer
+  border: none
+.QA_type
+  
+  &:nth-child(2)
+    margin-top: 50px
+    padding-top: 50px
+    border-top: 1px solid $color_decoration
+.QA_type_title
+  color: $color_text
+  text-align: center
+.question
+  margin-top: 50px
+.answer
+  color: $color_text
+#Precautions
+  margin-top: 100px
+  margin-left: auto
+  margin-right: auto
+  color: $color_decoration
+  p
+    margin-left: auto
+    width: fit-content
+    margin: 0 auto
+#member_order
+  margin-left: 15px
+#order_btn_group
+  border-bottom: 1px solid $color_line
+  width: fit-content
+#border_stick
+  display: block
+  width: 105px
+  height: 3px
+  background-color: #000000
+.order_btns
+  display: inline-block
+  padding-left: 50px
+  padding-right: 50px
+  padding-bottom: 10px
+  &:nth-child(1)
+    padding: unset
+    padding-right: 50px 
+
+  input
+    font-size: 25px
+    font-weight: bolder
+    background-color: #ffffff
+    border: none
+    cursor: pointer
+
+.order_number
+  width: auto
+  max-width: 885px 
+  list-style: none
+  &:nth-child(1)
+    margin-top: 20px
+.oder
+  padding: 10px
+  border: 1px solid $color_line
+#deal_with,#wait_to_get,#complete,#cancel
+  display: none
+
+#member_data
+  margin-top: 50px
+  line-height: 50px
+  span,p
+    display: inline-block
+  p
+    font-weight: bolder
+    font-size: 20px
+  span
+    margin-left: 100px
+  input
+    font-weight: bolder
+    font-size: 25px
+    padding: 0 100px
+    color: #ffffff
+    background-color: #333
+    border-color: #333
+    cursor: pointer
+    user-select: none
+    &:active
+      border-color: #888
+
+.input_container
+  margin-bottom: 50px
+  p
+    line-height: 50px
+  input,span
+    margin-left: 50px
+  input
+    width: 200px
+    padding: 5px
+    border: solid 1px #000000
+#member_address
+  width: 60%
+#new_password
+  margin-left: 68px
+
+#change_password_btn,#comfirm_change_btn
+  width: unset
+  font-size: 25px
+  font-weight: bolder
+  color: #ffffff
+  background-color: #555
+  border: none
+  padding: 5px 70px
+  margin-top: 20px
+  margin-left: 120px
+  cursor: pointer
+
+  
+
+
+
+
+
+@media screen and ( max-width: 960px )
+
+  .order_btns
+    padding-left: 45px
+    padding-right: 45px
+@media screen and ( max-width: 768px )
+  .order_btns
+    padding-left: unset
+    padding-right: unset
+    &:nth-child(1)
+      padding-right: unset
+  #border_stick
+    display: none
+  #order_btn_group
+    width: 100%
+    ul
+      display: flex
+      justify-content: space-between
+  #member_order
+    margin-left: unset
+
+
+@media screen and ( max-width: 640px )
+  #login_form input
+    width: 90%
+    height: 20px
+  #login_form_left
+    width: 30%
+  #login_form_right
+    margin-left: 150px
+  .cart_commodity h3
+    line-height: unset
+  .cart_commodity_quantity
+    top: unset
+  .delete_commodity 
+    top: unset
+  .order_btns
+    input
+      font-size: 20px
+
+@media screen and ( max-width: 480px )
+  #login_form
+    flex-direction: column
+    height: 850px
+  #login_form_left
+    margin: 0 auto
+    width: 100%
+  #login_form_right
+    margin: 0 auto
+    width: 100%
+    height: 400px
+  #login_btn_box
+    width: 100%
+  #member_order
+    margin-left: unset
+  #member_data
+    span
+      margin-left: unset
+  #change_password_btn,#comfirm_change_btn
+    margin-left: auto
+    margin-right: auto
+    display: block
+  .input_container
+    input
+      margin-left: 10px
+  #new_password
+    margin-left: 30px
+@media screen and ( max-width: 320px )
+  .cart_image
+    display: none
+  .cart_text
+    width: 100%
+  #member_data
+    input
+      padding: 0 30px
+      font-size: 15px
+  .order_btns
+    input
+      font-size: 10px
+  .input_container
+    span
+      margin-left: 10px

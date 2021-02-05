@@ -1,0 +1,199 @@
+$main_color: #75aab1;
+$main_color_hover: rgba(255, 255, 255, 0.8)
+$main_color_btn_hover: #b9b0b2;
+$main2_color: #B9B0B2;
+$color_decoration: #BC6C2C;
+$color_decoration_slider: rgba(148, 154, 137, 0.5);
+$color_text: #727171;
+$color_box_border: #9b9b9b;
+$color_line: #B9B0B2;
+
+main
+  max-width: 768px
+
+#about_title_box,#feedback_title_box,#bussiness_title,
+  width: 80%
+  margin-left: auto
+  margin-right: auto
+  margin-top: 30px
+  padding-bottom: 25px
+  border-bottom: solid 2px $color_line
+#main_about,#main_feedback,#main_bussiness,#main_subject
+  width: 80%
+  margin-left: auto
+  margin-right: auto
+  margin-top: 25px
+  display: flex
+  justify-content: space-between
+#main_feedback
+  width: 80%
+#about_title,#subject_title
+  padding-left: 10px
+  border-left: solid 5px $color_decoration
+#about_container, #submission_container
+  width: 100%
+.about_paragraph
+  margin-top: 50px
+  &:nth-child(1)
+    margin-top: 0
+  &:nth-child(5)
+    border-top: solid 1px #000000
+    padding-top: 30px
+    width: 50%
+  a
+    color: #000000
+    font-weight: bolder
+    &:hover
+      text-decoration: underline
+
+#business_form, #subject_form
+  margin-top: 50px
+  p
+    margin: 10px 0
+  input
+    width: 95%
+#feedback_form
+  p
+    margin-bottom: 5px
+  input
+    margin-bottom: 10px
+textarea
+  width: 95%
+  height: 200px
+  resize: none
+      
+#submit_feedback,#send_form_bussiness,#send_form_subject
+  width: 60px
+  height: 35px
+  float: right 
+  right: 5%
+  margin-top: 10px
+  font-weight: 900
+  font-size: 20px
+  color: #ffffff
+  border: none
+  border-radius: 5px
+  background-color: $color_text
+  transition: 0s
+  cursor: pointer
+  &:active
+    background-color: #333333
+
+aside
+  top: 30px
+  width: 150px
+  max-width: 150px
+  position: fixed
+  transform: translate(-150px,100px)
+  opacity: 0
+  transition: 1s
+  ul,li
+    width: 99%
+    margin-left: 10px
+  li
+    margin-top: 20px
+    list-style: none
+    a
+      color: #000000
+      font-weight: 700
+      &:hover
+        text-decoration: underline
+#aside_line
+  width: 1px
+  height: 0%
+  margin-top: 10px
+  display: inline-block
+  position: absolute
+  background-color: $color_line
+  transition: 1s ease-in-out
+  transition-delay: .5s
+#phone_aside
+  display: none
+  position: fixed
+  height: 100vh
+  margin-top: -100px
+  max-width: unset
+  background-color: #fff
+  border: solid 1px $color_line
+  padding: 10px 0
+  z-index: 20
+  li:nth-child(1)
+    margin-top: unset
+  ul,li
+    width: 99%
+    margin-left: 10px
+    margin-top: 50px
+  li
+    margin-top: 20px
+    list-style: none
+    margin-top: 50px
+    a
+      color: #000000
+      font-weight: 700
+      &:hover
+        text-decoration: underline
+#aside_open_arrow
+  position: absolute
+  right: 0
+  top: calc(50% - 100px)
+  font-size: 50px
+  margin-right: -34px
+  padding-right: 10px
+
+  display: none
+  background-color: #fff
+  border: 1px solid #B9B0B2
+  text-align: center
+  transition: 0s
+  border-radius: 10px
+  letter-spacing: -15px
+  line-height: 100px
+  user-select: none
+  font-family: monospace
+#gray_exit_area
+  position: fixed
+  display: none
+  width: 100vw
+  height: 100vh
+  margin-top: -100px
+  background-color: rgba(0,0,0,.8)
+  z-index: 18
+
+@media screen and ( max-width: 960px )
+  .about_paragraph
+    &:nth-child(5)
+      width: 100%
+
+  #main_about
+    flex-direction: column
+  #about_container
+    margin-left: auto
+    margin-right: auto
+  aside
+    display: none
+  #phone_aside
+    display: block
+    width: 33vw
+    left: -33vw
+    ul
+      margin-top: 0
+  #aside_line
+    display: none
+  #aside_open_arrow
+    display: block
+    border: 1px solid $color_line
+    text-align: center
+
+
+@media screen and ( max-width: 640px )
+  #phone_aside
+    width: 50vw
+    left: -50vw
+
+ 
+@media screen and ( max-width: 480px )
+  #main_abou
+    width: 100%
+    margin-top: 25px
+
+// @media screen and ( max-width: 320px  )

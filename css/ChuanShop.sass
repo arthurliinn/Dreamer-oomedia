@@ -1,0 +1,430 @@
+$main_color: #75aab1;
+$main_color_hover: rgba(255, 255, 255, 0.8)
+$main_color_btn_hover: #b9b0b2;
+$main2_color: #B9B0B2;
+$color_decoration: #BC6C2C;
+$color_decoration_slider: rgba(148, 154, 137, 0.5);
+$color_text: #727171;
+$color_box_border: #9b9b9b;
+$color_line: #B9B0B2;
+
+
+
+
+
+main
+  justify-content: space-between
+  max-width: 1080px
+
+aside
+  width: 18%
+
+#main_top
+  flex-wrap: wrap
+  height: auto
+.swiper-container 
+  width: 98%
+  height: 380px
+  margin-left: initial
+  margin-right: auto
+  margin-top: 20px
+
+  &:root
+  --swiper-theme-color: #801F15
+  --swiper-navigation-size: 50px
+  &::before
+    content: none
+  &::after
+    content: none
+#new_commodity
+  width: 80%
+  border-bottom: solid 2px $main2_color
+  margin-left: auto
+  margin-right: auto
+.content_container
+  margin-top: 50px
+.container_title
+  width: 170px
+  padding-left: 15px
+  border-left: solid 8px $color_decoration 
+.swiper2
+  width: 100%
+  margin-top: 0
+  margin-left: auto
+  margin-right: auto
+.swiper-slide
+  text-align: center
+  display: -webkit-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  -webkit-justify-content: center
+  justify-content: center
+  -webkit-box-align: center
+  -ms-flex-align: center
+  -webkit-align-items: center
+  align-items: center
+  img
+    width: 100%
+    height: unset
+    object-fit: cover   
+.swiper-slide2
+  text-align: left
+  h3
+    color: #000000
+  p
+    color: $main2_color
+  h4
+    color: $main_color
+  a
+    height: auto
+.swiper-pagination
+  margin-top: 10px
+  top: 40px
+  height: 20px
+  transform-origin: center
+  right: -50px
+  transform: rotate(90deg)
+  &:root
+  --swiper-theme-color: #801F15
+.swiper-pagination2
+  transform: rotate(0deg)
+  width: 50px
+  top: 0px
+  left: unset
+  right: 10px
+.swiper-pagination-bullet
+  margin-left: 10px 
+.swiper-button-prev,.swiper-button-next
+  margin-left: -20px
+  margin-right: -20px
+  --swiper-theme-color: #000000
+  --swiper-navigation-size: 15px
+  font-weight: bolder
+  background-color: #fff
+  padding: 15px
+  border-radius: 9999px
+  top: 115px
+.new-commodity-button-next,.new-commodity-button-prev
+  height: 10px
+  background-image: none
+  top: 40%
+.new-commodity-button-next
+  margin-right: 3px
+.new-commodity-button-prev
+  margin-left: 3px
+#hotsale
+  width: 80%
+  margin-left: auto
+  margin-right: auto
+
+#hotsale_commodity_container
+  display: flex
+  flex-wrap: wrap
+  justify-content: flex-start
+
+.hotsale_commodity
+  width: 250px
+  margin-top: 50px
+  margin-left: 30px
+  img
+    width: 100%
+    height: 200px
+  h3
+    color: #000000
+  p
+    color: $color_line
+  h4
+    color: $main_color
+
+
+#series_container
+  width: 75%
+
+#series_commodity_container
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+  
+.series_commodity
+  width: 250px
+  margin-top: 50px
+  &:hover
+    & h3 , & p
+      text-decoration: underline
+  img
+    width: 100%
+    height: 200px
+  h3
+    color: #000000
+  p
+    color: $color_line
+  h4
+    color: $main_color
+
+#page_btn
+  width: 150px
+  margin: 0 auto
+  margin-top: 20px
+  a
+    color: #000000
+    &:hover
+      text-decoration: underline
+
+#commodity_search
+  height: 50px
+  input
+    height: 26px
+    width: 150px
+    border: solid 2px $color_text
+    vertical-align: middle
+    padding-left: 5px 
+#commodity_search_btn
+  display: inline-block
+  background-color: $color_text
+  vertical-align: middle
+  cursor: pointer
+  transition: 0s
+  border: none
+  &:active
+    background-color: #333333
+  img
+    padding: 5px 10px
+    display: block
+
+#commodity_typelist
+  h3
+    padding-bottom: 20px
+
+#typesist
+  padding-top: 20px
+  border-top: solid 2px $color_line
+
+.commodity_series_selector
+  margin-top: 25px
+  list-style: none
+  user-select: none
+  span
+    position: absolute
+    right: 0
+    user-select: none
+    vertical-align: middle
+  &:nth-child(1)
+    margin-top: 0
+  .commodity_list_page_btn
+    right: unset
+    left: 10px
+    margin: 10px 0
+    position: relative
+    display: block
+    z-index: 20
+.commodity_pagelist
+  height: 0
+  overflow: hidden
+  cursor: pointer
+.series_btn
+  user-select: none
+  right: unset
+  left: 0
+  cursor: pointer
+  vertical-align: middle
+  z-index: 3333
+.series_btn_arrow
+  font-size: 20px
+  vertical-align: middle
+  line-height: 20px
+
+
+
+.commodity_series_ul
+  height: 0  //600
+  list-style: none
+  overflow: hidden
+.commodity_name
+  margin-top: 20px
+  user-select: none
+  a
+    color: #000000
+  &:hover
+    text-decoration: underline
+
+
+#surf_track
+  display: flex
+  a
+    color: $color_decoration
+    font-weight: bold
+    &:nth-child(3)
+      color: black
+
+#commodity_content
+  display: flex
+  margin-top: 10px
+
+#commodity_image_container
+  
+  width: 55%
+.commodity_image
+  transition: 0s
+.image_big
+  width: 100%
+.image_small
+  width: 20%
+  cursor: pointer
+#commodity_detail
+  width: 40%
+  padding-left: 50px
+  line-height: 50px
+  h2
+    color: $color_text
+  h1
+    // color: $color_decoration
+    &:nth-child(3)
+      color: $color_decoration
+#quantity_selector
+  width: 50%
+  display: flex
+#quantity_input
+  width: 100px
+  padding: 5px
+  border-left: none
+  border-right: none
+  border-bottom: solid 1px #000000
+.quantity_btn
+  background-color: #ffffff
+  border: solid 1px #000000
+  padding: 4px
+  cursor: pointer
+  transition: 0s
+  &:active
+    background-color: #333
+    color: #ffffff
+#putin_shopping_cart
+  display: inline-block
+  margin-top: 20px
+  padding: 1px 40px
+  font-size: 30px 
+  font-weight: bolder
+  background-color: $color_decoration
+  color: #ffffff
+  text-align: center
+  border-radius: 10px
+  user-select: none
+  cursor: pointer
+  span
+    display: inline-block
+  p
+    display: inline-block
+    margin-left: 10px
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+  -webkit-appearance: none
+
+input[type="number"]
+  -moz-appearance: textfield
+
+
+
+#commodity_discribtion
+  height: 500px
+  margin-top: 50px
+  h2
+    padding-bottom: 10px
+    border-bottom: solid 3px $color_text
+
+
+@media screen and ( max-width: 960px )
+  #commodity_search
+    input
+      width: 120px
+
+  #hotsale_commodity_container
+    justify-content: flex-start
+  #series_commodity_container
+    justify-content: flex-start
+  .series_commodity
+    &:nth-child(even)
+      margin-left: 100px
+  .hotsale_commodity
+    margin-left: auto
+    margin-right: auto
+
+  .swiper-container
+    margin-top: 0
+@media screen and ( max-width: 768px ) 
+  main
+    display: flex
+    flex-direction: column
+  aside
+    width: 100%
+  nav
+    z-index: 20
+
+  .commodity_series_ul
+    display: flex
+    flex-wrap: wrap
+    align-content: flex-start
+  .commodity_name
+    height: fit-content
+    margin-right: 30px
+  #series_container
+    width: 100%
+    margin-top: 50px
+  #series_commodity_container
+    width: 100%
+    justify-content: space-between
+
+  .series_commodity
+    &:nth-child(even)
+      margin-left: unset
+  .content_container
+    margin-top: 0
+  .swiper-pagination
+    top: 120px
+  .swiper-pagination2
+    top: 0px
+  #new_commodity
+    padding-bottom: 0px
+
+  #hotsale
+    margin-top: 50px
+
+  #putin_shopping_cart
+    font-size: 25px
+    padding: 1px 30px
+
+@media screen and ( max-width: 640px )
+  .swiper-button-next,.swiper-button-prev
+    top: 100px
+  #putin_shopping_cart
+    font-size: 20px
+    padding: 1px 20px
+@media screen and ( max-width: 480px )
+  .swiper-pagination
+    right: -60px
+    top: 150px
+  #commodity_content
+    flex-direction: column
+  #commodity_image_container
+    width: 100%
+  #commodity_detail
+    width: 100%
+    padding: unset
+    text-align: center
+  #quantity_selector
+    margin-left: auto
+    margin-right: auto
+    width: 140px
+
+  #series_commodity_container
+    justify-content: center
+
+@media screen and ( max-width: 320px )
+  .swiper-container
+    height: 300px
+  
